@@ -1,0 +1,65 @@
+input[type='image'] {
+    width: 15px;
+    height: 15px;
+}
+#Str{
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    height: 30px;
+}
+#Dex{
+    width: 150px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+#Int{
+    width: 150px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+#imStr{
+    position: absolute;
+    left: 17%;
+    top: 20%;
+}
+#imDex{
+    position: absolute;
+    left: 17%;
+    top: 25%;
+}
+#imInt{
+    position: absolute;
+    left: 17%;
+    top: 30%;
+}
+#labStr{
+    position: absolute;
+    left: 6%;
+    top: 20%;
+}
+#labDex{
+    position: absolute;
+    left: 6%;
+    top: 25%;
+}
+#labInt{
+    position: absolute;
+    left: 6%;
+    top: 30%
+}
+#Gold{
+    position: absolute;
+    top: 8%;
+    left: 3%;
+}
+#Goldzik{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 7.4%;
+    left: 4.1%;
+}
