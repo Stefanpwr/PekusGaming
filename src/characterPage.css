@@ -26,15 +26,45 @@ input[type='image'] {
     left: 17%;
     top: 20%;
 }
+#dmgStr{
+    position: absolute;
+    top: 20%;
+    left: 19%;
+}
+#dmgValueStr{
+    position: absolute;
+    top: 20%;
+    left: 24%;
+}
 #imDex{
     position: absolute;
     left: 17%;
     top: 25%;
 }
+#dmgDex{
+    position: absolute;
+    top: 25%;
+    left: 19%;
+}
+#dmgValueDex{
+    position: absolute;
+    top: 25%;
+    left: 26%;
+}
 #imInt{
     position: absolute;
     left: 17%;
     top: 30%;
+}
+#dmgInt{
+    position: absolute;
+    top: 30%;
+    left: 19%;
+}
+#dmgValueInt{
+    position: absolute;
+    top: 30%;
+    left: 32%;
 }
 #labStr{
     position: absolute;
