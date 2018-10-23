@@ -93,3 +93,25 @@ input[type='image'] {
     top: 7.4%;
     left: 4.1%;
 }
+#Level{
+    position: absolute;
+    top: 36%;
+    left: 6%;
+    font-size: large;
+}
+#Quest{
+    position: absolute;
+    background: bisque;
+    left: 50%;
+    top: 10%;
+    width: 30%;
+    padding: 1%;
+}
+#Exp{
+    margin-top: 8%;
+}
+
+#Points{
+    margin-left: 5.5%;
+    margin-top: 20%;
+}

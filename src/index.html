@@ -19,4 +19,21 @@
 <input type="image" src="../images/plus.png" name="image" id="imDex" onclick="AddDex()">
 <input type="image" src="../images/plus.png" name="image" id="imInt" onclick="AddInt()">
 <img id="Goldzik" src="../images/gold.png"/></body>
+
+
+
+<div id="Level" >Lvl <label id="LevelValue">1</label></div>
+<div id="Points" >Experience <label id="ExpPoints">0</label></div>
+<div id="Quest">
+    <div id="content">"Random Quest" is a science fiction short story,           <!-- random content  -->
+    which is also a love story, by John Wyndham. It was included
+    in his 1961 collection Consider Her Ways and Others. It has been
+    dramatised three times, twice under its original name and once as
+    "Quest for Love".</div>
+    <div id="Exp" >Experience: +<label id="ExpValue" >500</label></div>
+    <div id="NewGold" >Gold: +<label id="GoldValue" >30</label></div>
+    <div id="Time" >Time: <label id="TimeValue" >1</label> min</div>
+
+    <button class="QuestStart" onclick="AddExp()">Start new quest</button>
+</div>
 </html>

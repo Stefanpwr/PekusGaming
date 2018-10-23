@@ -66,3 +66,38 @@ function AddInt(){
     }
 
 }
+
+var i = 1;
+var j = 0;
+function AddExp() {
+
+
+    var value1 = document.getElementById("ExpValue");
+    var newExp = parseFloat(value1.innerHTML);
+    var value2 = document.getElementById("ExpPoints");
+    var oldExp = parseFloat(value2.innerHTML);
+    document.getElementById("ExpPoints").innerHTML = newExp+oldExp;
+    var value3 = document.getElementById("GoldValue");
+    var newGold = parseFloat(value3.innerHTML);
+    var value4 = document.getElementById("Gold");
+    var oldGold = parseFloat(value4.innerHTML);
+    document.getElementById("Gold").innerHTML = newGold+oldGold;
+
+
+       var nextLevel = 3000+3000*j;
+
+    if( newExp+oldExp == nextLevel){
+
+        i++;
+        document.getElementById("LevelValue").innerHTML = i;
+        j+=3;
+        alert("Nowy pozim!");
+
+    }
+
+
+
+
+
+
+}
