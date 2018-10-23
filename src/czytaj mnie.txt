@@ -1,0 +1,18 @@
+Hej!
+
+Co zrobilem to widac
+
+zmienna nextLevel nie bedzie dzialac tak jak teraz
+
+myslalem o tym ze mogla by rosnac wykladniczo, tzn natepny lvl 
+
+nie co 9000 exp tylko za kazdym razem 3000* 3^i, i++ przy kazdym poziomie 
+
+ale wydaje mi sie ze jeszcze jeszcze lepiej bedzie jesli okresli sie poziomy 
+
+w tablicy, wpisane recznie i tam bedzie sie je przechowywac. 
+
+ogólnie funckja addExp() bedzie wywolywana na koncu funkcji startQuest()
+
+startQuest() bedzie ustawiac stosowny timer na karcie questa 
+
