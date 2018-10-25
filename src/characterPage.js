@@ -67,11 +67,9 @@ function AddInt(){
 
 }
 
-var i = 1;
+
 var j = 0;
 function AddExp() {
-
-
     var value1 = document.getElementById("ExpValue");
     var newExp = parseFloat(value1.innerHTML);
     var value2 = document.getElementById("ExpPoints");
@@ -82,22 +80,67 @@ function AddExp() {
     var value4 = document.getElementById("Gold");
     var oldGold = parseFloat(value4.innerHTML);
     document.getElementById("Gold").innerHTML = newGold+oldGold;
-
-
-       var nextLevel = 3000+3000*j;
-
+    var nextLevel = 3000+3000*j;
     if( newExp+oldExp == nextLevel){
-
-        i++;
-        document.getElementById("LevelValue").innerHTML = i;
+        var value6 = document.getElementById("LevelValue");
+        var newLevel = parseFloat(value6.innerHTML);
+        document.getElementById("LevelValue").innerHTML = newLevel+1;
         j+=3;
         alert("Nowy pozim!");
-
     }
+}
+
+function startQuest(){
+
+    document.getElementById("Start").disabled = true;
+    var value1 = document.getElementById("Hours");
+    var QHours = parseFloat(value1.innerHTML);
+    var HNaN = isNaN(QHours);
+    if(HNaN==true){QHours=0;}
+
+    var value2 = document.getElementById("Minutes");
+    var QMinutes = parseFloat(value2.innerHTML);
+    var MNaN = isNaN(QMinutes);
+    if(MNaN==true){QMinutes=0;}
 
 
+    var value3 = document.getElementById("Seconds");
+    var QSeconds = parseFloat(value3.innerHTML);
+    var SNaN = isNaN(QSeconds);
+    if(SNaN==true){QSeconds=0;}
 
+    var timer ='<div id="HoursGo" class="Timer1"></div>'+'' +
+               '<div id="MinutesGo" class="Timer1"></div>'+'' +
+               '<div id="SecondsGo" style=clear: both; ></div>';
 
+    document.getElementById("Time").innerHTML= timer;
 
+    var myVar = setInterval(myTimer, 1000);
 
+    function myTimer() {
+        if(QHours==0 && QMinutes==0 && QSeconds==0)
+        {
+            document.getElementById("Time").innerHTML = "Wykonales questa!";
+            clearInterval(myVar);
+            AddExp();
+            /*setTimeout(LoadNew(),3000);*/
+        }
+        QSeconds--;
+        if(QSeconds==-1){
+            QSeconds=59;
+            QMinutes--;
+        }
+        if(QMinutes==-1){
+            QMinutes=59;
+            QHours--;
+        }
+        else {
+            if(QSeconds<10) document.getElementById("SecondsGo").innerHTML ="0"+QSeconds;
+            else document.getElementById("SecondsGo").innerHTML = QSeconds;
+            if(QMinutes<10) document.getElementById("MinutesGo").innerHTML = "0"+QMinutes + ":";
+            else document.getElementById("MinutesGo").innerHTML = QMinutes + ":";
+            if(QHours<10) document.getElementById("HoursGo").innerHTML = "0"+QHours + ":";
+            else document.getElementById("HoursGo").innerHTML = QHours + ":";
+        }
+    }
 }
